@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Comments</title>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="Index_1" type="submit">{{name1}}</button>
+        <button @click="Index_2" type="submit">{{name2}}</button>
+        <button @click="Index_3" type="submit">{{name3}}</button>
+
+        <form v-on:submit.prevent="custIndex">
+            <input type="text" v-model="inputBox">
+        </form>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"
+        integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="javascripts/script.js"></script>
+</body>
+
+</html>
